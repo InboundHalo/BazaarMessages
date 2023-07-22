@@ -1,0 +1,40 @@
+# Author: InboundHalo
+# Discord: inboundhalo
+# ##### ##### ##### ##### ##### ##### #####
+# This plugin uses the mini message format
+# Docs:       https://docs.advntr.dev/minimessage/index.html
+# Web editor: https://webui.advntr.dev/
+# ##### ##### ##### ##### ##### ##### #####
+# Placeholders:
+# %player%
+# %item-name%
+# %amount%
+# %price-per%
+# ##### ##### ##### ##### ##### ##### #####
+
+buy-message:
+  enabled: true
+  mini-message: null # Overrides everything below if not null
+  command: "/bazaar"
+  hover-message:
+    - "<gray>Player: </gray>%player%"
+    - "<gray>Item: </gray>%item-name%"
+    - "<gray>Amount: </gray>%amount%"
+    - "<gray>Price per: </gray>%price-per%"
+    - "<yellow>Click to open the bazaar"
+  message:
+    - "<gold><b>New Buy Order</b>"
+    - "<yellow><b>%price-per%</b> per <white><b>%item-name%</b> <gray>[%amount%]</hover></click>"
+sell-message:
+  enabled: true
+  mini-message: null # Overrides everything below if not null
+  message:
+    - "<gold><b>New Sell Offer</b>"
+    - "<yellow><b>%price-per%</b> per <white><b>%item-name%</b> <gray>[%amount%]</hover></click>"
+  command: "/bazaar"
+  hover-message:
+    - "<gray>Player: </gray>%player%"
+    - "<gray>Item: </gray>%item-name%"
+    - "<gray>Amount: </gray>%amount%"
+    - "<gray>Price per: </gray>%price-per%"
+    - "<yellow>Click to open the bazaar"
