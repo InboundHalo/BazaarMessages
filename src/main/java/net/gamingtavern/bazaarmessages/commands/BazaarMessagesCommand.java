@@ -13,14 +13,6 @@ import org.bukkit.entity.Player;
 public class BazaarMessagesCommand extends BaseCommand {
     MiniMessage msg = MiniMessage.miniMessage();
 
-    @Default
-    @Subcommand("help")
-    @Description("Learn about the bazaar messages commands")
-    @CommandPermission("bazaarmessages")
-    public void onHelp(Player sender) {
-        sender.sendMessage(msg.deserialize("Hello3 " + sender.getUsername()));
-    }
-
     @Subcommand("reload")
     @Description("Reload Bazaar Messages' config")
     @CommandPermission("bazaarmessages.reload")
