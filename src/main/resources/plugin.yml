@@ -1,0 +1,5 @@
+name: FBE
+version: '${project.version}'
+main: net.gamingtavern.fbe.FBE
+api-version: '1.20'
+depend: [Bazaar]
