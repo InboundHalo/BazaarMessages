@@ -14,11 +14,11 @@ import org.bukkit.event.Listener;
 import org.bukkit.inventory.ItemStack;
 
 import java.util.Collection;
+import java.util.Objects;
 import java.util.UUID;
 
 public class onEnquiryCreate implements Listener {
-
-    public void onEnquiryCreate() {
+    public onEnquiryCreate() {
         Bukkit.getPluginManager().registerEvents(this, BazaarMessages.getInstance());
     }
 
@@ -50,9 +50,12 @@ public class onEnquiryCreate implements Listener {
         String displayName = player.getName();
         if (displayName == null) displayName = "NotFound";
 
-        String itemName    = BazaarUtil.getItemstack(event)
-                .getItemMeta()
-                .getDisplayName();
+        String itemName = MiniMessage.miniMessage().serialize(
+                Objects.requireNonNull(item
+                        .getItemMeta()
+                        .displayName()
+                )
+        );
 
         int amount         = event.getAmount();
         double pricePer    = event.getPrice();
