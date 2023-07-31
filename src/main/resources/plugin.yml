@@ -1,5 +1,7 @@
-name: FBE
-version: '${project.version}'
-main: net.gamingtavern.fbe.FBE
+name: BazaarMessages
+author: InboundHalo
+version: '1.0'
+main: net.gamingtavern.bazaarmessages.BazaarMessages
 api-version: '1.20'
+load: STARTUP
 depend: [Bazaar]
