@@ -24,7 +24,7 @@ buy-message:
     - "<yellow>Click to open the bazaar"
   message:
     - "<gold><b>New Buy Order</b>"
-    - "<yellow><b>%price-per%</b> per <white><b>%item-name%</b> <gray>[%amount%]</hover></click>"
+    - "<yellow><b>%price-per%</b> per <white><b>%item-name%</b> <gray>[%amount%]"
 sell-message:
   enabled: true
   mini-message: null # Overrides everything below if not null
