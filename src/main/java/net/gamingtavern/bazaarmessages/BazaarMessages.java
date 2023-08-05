@@ -15,8 +15,6 @@ public final class BazaarMessages extends JavaPlugin implements Listener {
     public static String sellMessage;
     public static String buyMessage;
 
-
-
     @Override
     public void onEnable() {
         instance = this;
