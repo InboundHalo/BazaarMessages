@@ -30,7 +30,7 @@ sell-message:
   mini-message: null # Overrides everything below if not null
   message:
     - "<gold><b>New Sell Offer</b>"
-    - "<yellow><b>%price-per%</b> per <white><b>%item-name%</b> <gray>[%amount%]</hover></click>"
+    - "<yellow><b>%price-per%</b> per <white><b>%item-name%</b> <gray>[%amount%]"
   command: "/bazaar"
   hover-message:
     - "<gray>Player: </gray>%player%"
