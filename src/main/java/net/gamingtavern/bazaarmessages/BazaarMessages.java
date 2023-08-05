@@ -19,6 +19,7 @@ public final class BazaarMessages extends JavaPlugin implements Listener {
     public void onEnable() {
         instance = this;
         log = Bukkit.getLogger();
+        saveDefaultConfig();
 
         // Register Events
         log.info("Register Events");
